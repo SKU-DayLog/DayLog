@@ -5,15 +5,8 @@ const portNum = 4000;
 const listeningPort = () =>
   console.log(`Listening on http:localhost:${portNum}`);
 
-const simpleJson = {
-  name: "ryokuman",
-  age: 21,
-};
+app.use("/a", express.static(__dirname + "/public/test.js"));
 
-function test() {
-  return simpleJson;
-}
-
-app.get("/", (req, res) => res.json(test));
+app.get("/", (req, res) => res.json({ name: "test" }));
 
 app.listen(portNum, listeningPort);
