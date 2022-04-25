@@ -47,7 +47,10 @@ body {
     outline: none;
 }
 
-.error .join__input {
+.error .join__input,
+.username .join__input,
+.id .join__input,
+.password .join__input {
     border-bottom: 1px solid #C83E3E;
 }
 
@@ -102,6 +105,6 @@ body {
     display: none;
 }
 
-.error .join__error {
+.password .join__error {
     display: block;
 }
