@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Daylog</title>
+    <link rel="stylesheet" href="../../styles/home.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a onclick="location.href='index.html'"><img src="../../images/navbar/Daylog.png" class="logo"></a>
+            <form class="search-container">
+                <img src="../../images/navbar/search.png" class="search__icon">
+                <input type="text" name="search-query" class="search__box">
+            </form>
+            <div class="menu-container">
+                <img src="../../images/navbar/notification.png" class="menu__icon notification__icon">
+                <a onclick="location.href=''"><img src="../../images/navbar/friends.png" class="menu__icon"></a>
+                <a onclick="location.href=''"><img src="../../images/navbar/explore.png" class="menu__icon"></a>
+            </div>
+        </div>
+        <div class="notification-container hide">
+            <div class="notification__item">
+                <img src="../../images/users/user1.png" class="notification__avatar">
+                <div class="notification__info">
+                    <p class="notification__name">sunghyunnn</p>
+                    <p class="notification__desc">started following you.</p>
+                    <time class="notification__time">8h</time>
+                </div>
+            </div>
+            <div class="notification__item">
+                <img src="../../images/users/user2.png" class="notification__avatar">
+                <div class="notification__info">
+                    <p class="notification__name">hoo.nee</p>
+                    <p class="notification__desc">liked your log.</p>
+                    <time class="notification__time">9h</time>
+                </div>
+            </div>
+            <div class="notification__item">
+                <img src="../../images/users/user3.png" class="notification__avatar">
+                <div class="notification__info">
+                    <p class="notification__name">notar.tamas</p>
+                    <p class="notification__desc">commented on your log.</p>
+                    <time class="notification__time">12h</time>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="main">
+        <div class="calendar-container">
+            <div class="calendar__header">
+                <div class="calendar__year-month"></div>
+                <div class="calendar__button">
+                    <button class="go-prev" onclick="prevMonth()">&lt;</button>
+                    <button class="go-today" onclick="goToday()">Today</button>
+                    <button class="go-next" onclick="nextMonth()">&gt;</button>
+                </div>
+            </div>
+            <div class="calendar__days">
+                <div class="day">Sun</div>
+                <div class="day">Mon</div>
+                <div class="day">Tue</div>
+                <div class="day">Wed</div>
+                <div class="day">Thu</div>
+                <div class="day">Fri</div>
+                <div class="day">Sat</div>
+            </div>
+            <div class="dates"></div>
+
+        </div>
+        <div class="profile-container">
+            <img src="../../images/profile/profile.png" class="profile__image">
+            <p class="profile__id">sunghyunnn</p>
+            <p class="profile__username">권성현</p>
+            <div class="profile__follow-container">
+                <div class="follower-wrapper">
+                    <p class="follower__number">137</p>
+                    <p>팔로워</p>
+                </div>
+                <div class="following-wrapper">
+                    <p class="following__number">109</p>
+                    <p>팔로잉</p>
+                </div>
+                <div class="icon-wrapper">
+                    <img src="../../images/profile/emptyheart.png" class="follow__icon">
+                    <p>&nbsp;+</p>
+                </div>
+            </div>
+            <button class="profile__settings"><img src="../../images/profile/settings.png" class="profile__settings settings__image"></button>
+        </div>
+    </section>
+    <script src="../../scripts/notification.js"></script>
+    <script src="../../scripts/calendar.js"></script>
+</body>
+</html>

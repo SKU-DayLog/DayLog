@@ -4,26 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login</title>
+    <title>Daylog Login</title>
     <link rel="stylesheet" href="../../styles/login.css">
 </head>
 <body>
     <form class="login">
         <h1 class="login__title">Daylog</h1>
         <div class="login__id">
-            <input type="text" class="login__input" placeholder="  id">
-            <div class="login__error">Enter your id</div>
+            <input type="text" class="login__input" placeholder="  Id">
+            <div class="login__error-empty">Enter your id.</div>
         </div>
         <div class="login__password">
-            <input type="password" class="login__input" placeholder="  password">
-            <div class="login__error">Enter your password</div>
+            <input type="password" class="login__input" placeholder="  Password">
+            <div class="login__error-empty">Enter your password.</div>
         </div>
-        <button class="login__button" type="sumbit">LOGIN</button>
-        <div class="login__error">Incorrect username/password</div>
+        <button class="login__button" type="submit">LOGIN</button>
+        <div class="login__error">Incorrect username/password.</div>
         <div class="login__link-container">
             <a class="login__link" id="linkFindPassword">Forgot password?</a>
             <h6>&nbsp;&nbsp;|&nbsp;&nbsp;</h6>
-            <a class="login__link" id="linkCreateAccount">Create a new account</a>
+            <a class="login__link" onclick="location.href='join.html'">Create a new account</a>
         </div>
     </form>
     <script src="../../scripts/loginValidation.js"></script>
