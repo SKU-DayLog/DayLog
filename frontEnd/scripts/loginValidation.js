@@ -18,7 +18,7 @@ form.onsubmit = ()=>{
 idInput.onkeyup = ()=>{
     if(idInput.value == ""){
         idField.classList.add("error");
-    } else{
+    }else{
         idField.classList.remove("error");
     }
 }
