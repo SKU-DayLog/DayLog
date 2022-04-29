@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Daylog</title>
+    <title>Daylog Home</title>
+    <link rel="stylesheet" href="../../styles/navbar.css">
     <link rel="stylesheet" href="../../styles/home.css">
 </head>
 <body>
@@ -17,13 +18,13 @@
             </form>
             <div class="menu-container">
                 <img src="../../images/navbar/notification.png" class="menu__icon notification__icon">
-                <a onclick="location.href=''"><img src="../../images/navbar/friends.png" class="menu__icon"></a>
-                <a onclick="location.href=''"><img src="../../images/navbar/explore.png" class="menu__icon"></a>
+                <a onclick="location.href='post.html'"><img src="../../images/navbar/friends.png" class="menu__icon"></a>
+                <a onclick="location.href='post.html'"><img src="../../images/navbar/explore.png" class="menu__icon"></a>
             </div>
         </div>
         <div class="notification-container hide">
             <div class="notification__item">
-                <img src="../../images/users/user1.png" class="notification__avatar">
+                <img src="../../images/users/user1.png" class="notification__user">
                 <div class="notification__info">
                     <p class="notification__name">sunghyunnn</p>
                     <p class="notification__desc">started following you.</p>
@@ -31,7 +32,7 @@
                 </div>
             </div>
             <div class="notification__item">
-                <img src="../../images/users/user2.png" class="notification__avatar">
+                <img src="../../images/users/user2.png" class="notification__user">
                 <div class="notification__info">
                     <p class="notification__name">hoo.nee</p>
                     <p class="notification__desc">liked your log.</p>
@@ -39,7 +40,7 @@
                 </div>
             </div>
             <div class="notification__item">
-                <img src="../../images/users/user3.png" class="notification__avatar">
+                <img src="../../images/users/user3.png" class="notification__user">
                 <div class="notification__info">
                     <p class="notification__name">notar.tamas</p>
                     <p class="notification__desc">commented on your log.</p>
@@ -68,7 +69,6 @@
                 <div class="day">Sat</div>
             </div>
             <div class="dates"></div>
-
         </div>
         <div class="profile-container">
             <img src="../../images/profile/profile.png" class="profile__image">
